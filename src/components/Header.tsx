@@ -5,7 +5,7 @@ const Header: React.FC = () => {
     return (
         <header className="w-full h-[4.5rem] border-b border-secondaryNeon p-6 md:px-16 flex items-center justify-between relative">
             <Image src="/logo/menu.svg" alt="menu" width={24} height={24} className="md:hidden" onClick={() => {
-                const navMenu = document.getElementById('nav-menu');
+                const navMenu: any = document.getElementById('nav-menu');
                 navMenu.classList.toggle('hidden');
             }} />
             <div id="nav-menu" className='hidden md:inline-flex absolute top-16 md:relative md:top-0 border md:border-0 border-secondaryNeon text-thirdWhite bg-primaryBlack md:bg-none'>
