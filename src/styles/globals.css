@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+    html {
+      font-family: Roboto, system-ui, font-sans;
+    }
+}
+
+@layer components {
+  .my-button {
+    @apply w-[96px] h-[48px] bg-black text-white text-base;
+  }
+}
